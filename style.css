@@ -1,0 +1,137 @@
+*
+{   
+    margin: 10px;
+    padding: 0;
+    
+}
+h1
+{
+    display: flex;
+background-color:#081b31;
+color: white;
+height: 50px;
+justify-content: space-evenly;
+align-items: center;
+}
+#rock
+{
+    height:150px;
+    width: 150px;
+    border-radius: 80%;
+    background-image: url("rock.png");  
+    background-size: cover;
+}
+#paper
+{
+    height:150px;
+    width: 150px;
+    border-radius: 80%;  
+    background-image: url("paper.jpg");  
+    background-size: cover;
+}
+#scissors
+{
+    height:150px;
+    width: 150px;
+    border-radius: 80%; 
+    background-image: url("scissors.jpg");  
+    background-size: cover; 
+}
+.choices
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+}
+.score-board
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    gap: 2px;
+}
+#msg
+{   
+    line-height: 60px;
+    height:60px;
+    width: 500px;
+    background-color: #081b31;
+    color: white;
+    text-align:center;
+    font-size: 2vw;
+    border-radius: 25px;
+}
+.message
+{
+    display: flex;
+    justify-content: center;
+    
+}
+#rock:hover, #paper:hover, #scissors:hover
+{
+    border: 5px solid red;
+    cursor: pointer;
+}
+#you, #comp
+{
+    font-size: 4vw;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    #rock, #paper, #scissors {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score-board {
+        flex-direction: column;
+        font-size: 4vw;
+    }
+
+    #msg {
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    #you, #comp {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    #rock, #paper, #scissors {
+        height: 80px;
+        width: 80px;
+    }
+
+    .score-board {
+        font-size: 5vw;
+    }
+
+    #msg {
+        font-size: 5vw;
+    }
+
+    #you, #comp {
+        font-size: 8vw;
+    }
+}
